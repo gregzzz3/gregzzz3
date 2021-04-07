@@ -1,0 +1,9 @@
+
+
+function OnStart()
+{
+    b = app.LoadBoolean( "MyBool", true );
+    app.ShowPopup( b );
+
+    app.SaveBoolean( "MyBool", !b );
+}
